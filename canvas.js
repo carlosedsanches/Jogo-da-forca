@@ -107,9 +107,9 @@ function desenharCanvas() {
     tablero.lineCap="round"
     tablero.lineJoin="round"
     tablero.fillStyle="green"
-    tablero.fillText("Ganhou,",950,320)
+    tablero.fillText("Ganhou!",950,320)
     tablero.fillText("Parabéns!",930,360)
-    setTimeout( recarregar , 1000)
+    setTimeout( recarregar , 8000)
   }   
 
   function recarregar(){

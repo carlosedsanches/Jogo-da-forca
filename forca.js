@@ -20,12 +20,12 @@ let letraEscolhida = [];
 
 //eventos
 
-// captura o id "iniciar-juego" no momento do click e direciona ao método que inicia o jogo
+// captura o id "iniciar-jogo" no momento do click e direciona ao método que inicia o jogo
 document.getElementById("iniciar-jogo").onclick = () => {
   iniciarJogo();
 }
 
-// captura o id "btn-guardar", salva a palavra adicionada
+// captura o id "btn-salvar", salva a palavra adicionada
 document.getElementById("btn-salvar").onclick = () => {
   salvarPalavra();
  
@@ -186,7 +186,7 @@ function iniciarJogo() {
 
         }
         // se o usuário cometeu mais erros do que o permitido, chama as funcões
-        // que desenham a forca e exibe a mesnagem de fim de jogo
+        // que desenham a forca e exibe a mensagem de fim de jogo
         else {
           if (!verificarLetraClicada(e.key) && !verificarVencedor(letra)) return
           desenharForca(erros)
